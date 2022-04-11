@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>DOM JS</title>
+</head>
+
+<body>
+
+    <div class="container p-5 h-100 mx-auto">
+        <h1 class="text-blue-400 py-3">DOM JS Básico</h1>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="bg-gray-50">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    <span class="block">Ready to dive in?</span>
+                    <span class="block text-indigo-600">Start your free trial today.</span>
+                </h2>
+                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                    <div class="inline-flex rounded-md shadow">
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                            Get started </a>
+                    </div>
+                    <div class="ml-3 inline-flex rounded-md shadow">
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
+                            Learn more </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-50 bg-gray-100 border border-grey-4 p-8 rounded-md mt-10">
+            <h2 class="pb-8 text-blue-600 text-2xl">Formulário</h2>
+            <form action="" method="#">
+                <label class="relative block">
+                    <span class="sr-only">Search</span>
+                    <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Pesquisar . . ." type="text" name="search" />
+                </label>
+
+                <div class="py-10 text-right">
+                    <a href="#" id="btnCTA" class="btn-cta inline-flex justify-center py-2 w-full py-6 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</a> 
+                </div>
+
+                <div id="result" class="h-16 p-5 bg-[#ffffff] rounded-md">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+
+        //const btnCTA = document.querySelector('button');
+        //const btnCTA = document.querySelector('.btn-cta');
+        //const btnCTA = document.querySelector('#btnCTA');
+        // TAG, #ID, .CLASS, [ATRIBUTO] - querySelector
+
+        //const btnCTA = document.getElementById('btnCTA');
+        //const btnCTA = document.getElementsByClassName('btn-cta');
+
+        //console.log(btnCTA);
+
+        const result = document.querySelector('#result');
+        const inputForm = document.querySelector('form');
+
+        btnCTA.addEventListener('click', function (e) {
+            e.preventDefault();
+            result.innerHTML = '<h3>Digite um texto válido</h3>';
+            result.classList.add('border-2','border-rose-600', 'bg-yellow-200');
+        
+        });
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
