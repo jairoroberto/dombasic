@@ -7,7 +7,7 @@ _____________________
 - [x] __getElementsByClassName__
 - [x] __querySelector__
 - [ ] __querySelectorAll__
-- 
+- [ ] Outros
 
 
 ###Javascript DOM - Example:
